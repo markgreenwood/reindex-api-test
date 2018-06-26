@@ -10,7 +10,14 @@ const {
   createUsers
 } = require('./utils/test-utils');
 
+const { reindex } = require('../index.js');
+
 const esClient = es.Client({ host: 'localhost:9200' });
+
+const createIndices = () => Promise.all([
+  createNewIndex({ esClient, index: 'test-source-index' }),
+  createNewIndex({ esClient, index: 'test-dest-index' })
+]);
 
 const reindexSpec = (src, dest) => ({
   body: {
@@ -20,44 +27,42 @@ const reindexSpec = (src, dest) => ({
     dest: {
       index: dest,
       version_type: 'external'
-    }
+    },
+    conflicts: 'proceed'
   },
   refresh: true
 });
 
 describe('Reindex API', () => {
+  let userData;
+
+  before(async () => {
+    userData = await createUsers(6);
+  });
+
   context('when source index is reindexed to an empty destination index', () => {
     let sourceRecs;
     let destRecs;
 
     beforeEach(async () => {
-      const userData = await createUsers(5);
-      await createNewIndex({ esClient, index: 'test-source-index' });
-      await createNewIndex({ esClient, index: 'test-dest-index' });
-      await populateNewIndex({ esClient, index: 'test-source-index', data: userData });
-      await esClient.reindex(reindexSpec('test-source-index', 'test-dest-index'));
+      await createIndices();
+      await populateNewIndex({ esClient, index: 'test-source-index', data: R.take(5, userData) });
+      await reindex({ esClient, srcIndex: 'test-source-index', destIndex: 'test-dest-index' });
       [sourceRecs, destRecs] = await compareIndicesContents({ esClient })('test-source-index', 'test-dest-index');
     });
 
     it('will copy source documents to the destination index', () => {
       expect(sourceRecs).to.deep.equal(destRecs);
     });
-
-    afterEach(async () => Promise.all([
-      safeDeleteIndex({ esClient, index: 'test-source-index' }),
-      safeDeleteIndex({ esClient, index: 'test-dest-index' })
-    ]));
   });
 
   context('when source index with altered record is reindexed onto existing destination index', () => {
     let sourceRecs, destRecs, reindexResponse;
 
     beforeEach(async () => {
-      const userData = await createUsers(5);
-      await createNewIndex({ esClient, index: 'test-source-index' });
-      await createNewIndex({ esClient, index: 'test-dest-index' });
-      await populateNewIndex({ esClient, index: 'test-source-index', data: userData });
-      await esClient.reindex(reindexSpec('test-source-index', 'test-dest-index'));
+      await createIndices();
+      await populateNewIndex({ esClient, index: 'test-source-index', data: R.take(5, userData) });
+      await reindex({ esClient, srcIndex: 'test-source-index', destIndex: 'test-dest-index' });
 
       let id = await esClient.search({
         index: 'test-source-index',
@@ -80,7 +85,7 @@ describe('Reindex API', () => {
         refresh: true
       });
 
-      reindexResponse = await esClient.reindex(R.mergeDeepRight(reindexSpec('test-source-index', 'test-dest-index'), { body: { conflicts: 'proceed' } }));
+      reindexResponse = await reindex({ esClient, srcIndex: 'test-source-index', destIndex: 'test-dest-index' });
       [sourceRecs, destRecs] = await compareIndicesContents({ esClient })('test-source-index', 'test-dest-index');
     });
 
@@ -97,27 +102,17 @@ describe('Reindex API', () => {
     it('will result in destination index that matches the source index', () => {
       expect(sourceRecs).to.deep.equal(destRecs);
     });
-
-    afterEach(async () => Promise.all([
-      safeDeleteIndex({ esClient, index: 'test-source-index' }),
-      safeDeleteIndex({ esClient, index: 'test-dest-index' })
-    ]));
   });
 
   context('when source index with added record is reindexed onto destination index', () => {
     let sourceRecs, destRecs, reindexResponse;
 
     beforeEach('before source with added', async () => {
-      let userData = await createUsers(5);
-      await createNewIndex({ esClient, index: 'test-source-index' });
-      await createNewIndex({ esClient, index: 'test-dest-index' });
-      await populateNewIndex({ esClient, index: 'test-source-index', data: userData });
+      await createIndices();
+      await populateNewIndex({ esClient, index: 'test-source-index', data: R.take(5, userData) });
       await esClient.reindex(reindexSpec('test-source-index', 'test-dest-index'));
-      userData = await createUsers(6);
-      await safeDeleteIndex({ esClient, index: 'test-source-index' });
-      await createNewIndex({ esClient, index: 'test-source-index' });
-      await populateNewIndex({ esClient, index: 'test-source-index', data: userData });
-      reindexResponse = await esClient.reindex(R.mergeDeepRight(reindexSpec('test-source-index', 'test-dest-index'), { body: { conflicts: 'proceed' } }));
+      await esClient.index({ index: 'test-source-index', type: '_doc', id: '5', body: userData[5], refresh: true });
+      reindexResponse = await reindex({ esClient, srcIndex: 'test-source-index', destIndex: 'test-dest-index' });
       [sourceRecs, destRecs] = await compareIndicesContents({ esClient })('test-source-index', 'test-dest-index');
     });
 
@@ -134,22 +129,15 @@ describe('Reindex API', () => {
     it('will only add to the destination the record that was added to the source', () => {
       expect(sourceRecs).to.deep.equal(destRecs);
     });
-
-    afterEach(async () => Promise.all([
-      safeDeleteIndex({ esClient, index: 'test-source-index' }),
-      safeDeleteIndex({ esClient, index: 'test-dest-index' })
-    ]));
   });
 
   context('when source index is reindexed onto destination index with modified record', () => {
-    let sourceRecs, destRecs, reindexResponse;
+    let reindexResponse;
 
     beforeEach(async () => {
-      let userData = await createUsers(5);
-      await createNewIndex({ esClient, index: 'test-source-index' });
-      await createNewIndex({ esClient, index: 'test-dest-index' });
-      await populateNewIndex({ esClient, index: 'test-source-index', data: userData });
-      await esClient.reindex(reindexSpec('test-source-index', 'test-dest-index'));
+      await createIndices();
+      await populateNewIndex({ esClient, index: 'test-source-index', data: R.take(5, userData) });
+      await reindex({ esClient, srcIndex: 'test-source-index', destIndex: 'test-dest-index' });
 
       let id = await esClient.search({
         index: 'test-dest-index',
@@ -172,8 +160,7 @@ describe('Reindex API', () => {
         refresh: true
       });
 
-      reindexResponse = await esClient.reindex(R.mergeDeepRight(reindexSpec('test-source-index', 'test-dest-index'), { body: { conflicts: 'proceed' } }));
-      [sourceRecs, destRecs] = await compareIndicesContents({ esClient })('test-source-index', 'test-dest-index');
+      reindexResponse = await reindex({ esClient, srcIndex: 'test-source-index', destIndex: 'test-dest-index' });
     });
 
     it('will not overwrite the modified record', () => {
@@ -188,19 +175,13 @@ describe('Reindex API', () => {
   });
 
   context('when source index is reindexed onto destination index with added record', () => {
-    let sourceRecs, destRecs, reindexResponse;
+    let reindexResponse;
     beforeEach(async () => {
-      let userData = await createUsers(5);
-      await createNewIndex({ esClient, index: 'test-source-index' });
-      await createNewIndex({ esClient, index: 'test-dest-index' });
-      await populateNewIndex({ esClient, index: 'test-source-index', data: userData });
-      await esClient.reindex(reindexSpec('test-source-index', 'test-dest-index'));
-      userData = await createUsers(6);
-      await safeDeleteIndex({ esClient, index: 'test-dest-index' });
-      await createNewIndex({ esClient, index: 'test-dest-index' });
-      await populateNewIndex({ esClient, index: 'test-dest-index', data: userData });
-      reindexResponse = await esClient.reindex(R.mergeDeepRight(reindexSpec('test-source-index', 'test-dest-index'), { body: { conflicts: 'proceed' } }));
-      [sourceRecs, destRecs] = await compareIndicesContents({ esClient })('test-source-index', 'test-dest-index');
+      await createIndices();
+      await populateNewIndex({ esClient, index: 'test-source-index', data: R.take(5, userData) });
+      await reindex({ esClient, srcIndex: 'test-source-index', destIndex: 'test-dest-index' });
+      await esClient.index({ index: 'test-dest-index', type: '_doc', id: '5', body: userData[5], refresh: true });
+      reindexResponse = await reindex({ esClient, srcIndex: 'test-source-index', destIndex: 'test-dest-index' });
     });
 
     it('will not remove the added record', () => {
@@ -213,4 +194,9 @@ describe('Reindex API', () => {
       });
     });
   });
+
+  after(async () => Promise.all([
+    safeDeleteIndex({ esClient, index: 'test-source-index' }),
+    safeDeleteIndex({ esClient, index: 'test-dest-index' })
+  ]));
 });

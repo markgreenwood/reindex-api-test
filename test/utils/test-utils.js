@@ -1,5 +1,7 @@
 const R = require('ramda');
-const users = require('../../users.json');
+const axios = require('axios');
+
+let users = require('../../users.json');
 
 const safeDeleteIndex = async ({ esClient, index }) => {
   const exists = await esClient.indices.exists({ index });
