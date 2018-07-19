@@ -1,0 +1,1186 @@
+[
+  {
+    "_index": "project-task-002",
+    "_type": "_doc",
+    "_id": "30788",
+    "_score": 6.1933002,
+    "_source": {
+      "targetTimestamp": null,
+      "legacy": {
+        "assignedToList": [
+          "1001490"
+        ],
+        "published": false
+      },
+      "hasIncentive": false,
+      "hoursBudget": 0,
+      "deletedTimestamp": "2017-05-04T17:04:52.000Z",
+      "priorityId": "AV-iqW0O7WqVH9upkx9T",
+      "number": 21,
+      "isImportant": false,
+      "completedTimestamp": null,
+      "createdById": "1001490",
+      "subsystemId": "AV-iqW0O7WqVH9upkx9k",
+      "createdTimestamp": "2017-05-04T17:04:29.000Z",
+      "energyImpactId": "AV-iqW0O7WqVH9upkx9Z",
+      "expenditureBudget": "0",
+      "requiredActions": "See if this gets created and then delete it.",
+      "statusId": "0",
+      "background": "Test action item",
+      "assignedToIdList": [],
+      "name": "Mark's Fake Action",
+      "siteId": "1000110",
+      "modifiedTimestamp": "2017-05-04T17:04:29.000Z",
+      "budgetApprovalRequired": false
+    }
+  },
+  {
+    "_index": "project-task-002",
+    "_type": "_doc",
+    "_id": "30789",
+    "_score": 6.1933002,
+    "_source": {
+      "targetTimestamp": null,
+      "legacy": {
+        "assignedToList": [
+          "1001490"
+        ],
+        "published": false
+      },
+      "hasIncentive": false,
+      "hoursBudget": 0,
+      "deletedTimestamp": "2017-05-04T17:06:47.000Z",
+      "priorityId": "AV-iqW0O7WqVH9upkx9T",
+      "number": 21,
+      "isImportant": false,
+      "completedTimestamp": null,
+      "createdById": "1001490",
+      "subsystemId": "AV-iqW0O7WqVH9upkx9h",
+      "createdTimestamp": "2017-05-04T17:06:08.000Z",
+      "energyImpactId": "AV-iqW0O7WqVH9upkx9Z",
+      "expenditureBudget": "0",
+      "requiredActions": "Create this action, modify it, then delete it.",
+      "statusId": "0",
+      "background": "Turn off the lights at night.",
+      "assignedToIdList": [],
+      "name": "Another fake action for Mark",
+      "siteId": "1000110",
+      "modifiedTimestamp": "2017-05-04T17:06:08.000Z",
+      "budgetApprovalRequired": false
+    }
+  },
+  {
+    "_index": "project-task-002",
+    "_type": "_doc",
+    "_id": "32371",
+    "_score": 6.1933002,
+    "_source": {
+      "targetTimestamp": "2017-11-29T00:00:00.000Z",
+      "legacy": {
+        "assignedToList": [
+          "Mark Greenwood"
+        ],
+        "published": false
+      },
+      "hasIncentive": false,
+      "hoursBudget": 0,
+      "deletedTimestamp": "2018-02-07T00:06:41+00:00",
+      "priorityId": "AV-iqW0O7WqVH9upkx9W",
+      "number": 4,
+      "isImportant": false,
+      "completedTimestamp": null,
+      "createdById": "1001490",
+      "subsystemId": "AV-iqW0O7WqVH9upkx9r",
+      "createdTimestamp": "2017-09-25T21:04:53.000Z",
+      "energyImpactId": "AV-iqW0O7WqVH9upkx9Z",
+      "expenditureBudget": "0",
+      "requiredActions": "Check filtering",
+      "statusId": "0",
+      "background": "Way out there, not overdue",
+      "assignedToIdList": [],
+      "name": "ThisOneIsOpenButNotOverdue",
+      "siteId": "1000676",
+      "modifiedTimestamp": "2017-09-25T21:04:53.000Z",
+      "budgetApprovalRequired": false
+    }
+  },
+  {
+    "_index": "project-task-002",
+    "_type": "_doc",
+    "_id": "AWFoXocMUCISVDM1dhRw",
+    "_score": 6.1933002,
+    "_source": {
+      "targetTimestamp": "2018-02-06T20:00:00.000Z",
+      "subsystemId": "AV-iqW0O7WqVH9upkx97",
+      "legacy": {
+        "assignedToList": [
+          "Mark Greenwood"
+        ],
+        "published": true
+      },
+      "createdTimestamp": "2018-02-05T23:48:00+00:00",
+      "hasIncentive": false,
+      "deletedTimestamp": "2018-02-07T00:04:04+00:00",
+      "requiredActions": "Check if adding this project triggers a 500 error...",
+      "statusId": "0",
+      "background": "Just released permission-service@3.1.2",
+      "isImportant": false,
+      "name": "AnotherTestProjectToCheckPermissions",
+      "siteId": "1000682",
+      "modifiedTimestamp": "2018-02-05T23:48:00+00:00",
+      "budgetApprovalRequired": false,
+      "createdById": "1001490"
+    }
+  },
+  {
+    "_index": "project-task-002",
+    "_type": "_doc",
+    "_id": "AWFtkUqhY9Zlm6KfMK1L",
+    "_score": 6.1933002,
+    "_source": {
+      "sourceId": "AV-iqW0O7WqVH9upkx-N",
+      "subsystemId": "AV-iqW0O7WqVH9upkx9e",
+      "legacy": {
+        "assignedToList": [
+          ""
+        ],
+        "published": true
+      },
+      "createdTimestamp": "2018-02-07T00:01:33+00:00",
+      "hasIncentive": false,
+      "deletedTimestamp": "2018-02-07T00:03:50+00:00",
+      "statusId": "0",
+      "isImportant": false,
+      "name": "Multi-Site Project",
+      "siteId": "1000682",
+      "modifiedTimestamp": "2018-02-07T00:01:33+00:00",
+      "budgetApprovalRequired": false,
+      "createdById": "1001490"
+    }
+  },
+  {
+    "_index": "project-task-002",
+    "_type": "_doc",
+    "_id": "AWFtkUqp7WqVH9upCG-1",
+    "_score": 6.1933002,
+    "_source": {
+      "sourceId": "AV-iqW0O7WqVH9upkx-N",
+      "subsystemId": "AV-iqW0O7WqVH9upkx9e",
+      "legacy": {
+        "assignedToList": [
+          ""
+        ],
+        "published": true
+      },
+      "createdTimestamp": "2018-02-07T00:01:33+00:00",
+      "hasIncentive": false,
+      "deletedTimestamp": "2018-02-07T00:03:45+00:00",
+      "statusId": "0",
+      "isImportant": false,
+      "name": "Multi-Site Project",
+      "siteId": "1000676",
+      "modifiedTimestamp": "2018-02-07T00:01:33+00:00",
+      "budgetApprovalRequired": false,
+      "createdById": "1001490"
+    }
+  },
+  {
+    "_index": "project-task-002",
+    "_type": "_doc",
+    "_id": "AWFtnQqbY9Zlm6KfMLBv",
+    "_score": 6.1933002,
+    "_source": {
+      "sourceId": "AWB7OeuHpQJJiXxO_mXK",
+      "subsystemId": "AV-iqW0O7WqVH9upkx9e",
+      "legacy": {
+        "assignedToList": [
+          ""
+        ],
+        "published": true
+      },
+      "createdTimestamp": "2018-02-07T00:14:23+00:00",
+      "hasIncentive": false,
+      "deletedTimestamp": "2018-02-07T22:30:51+00:00",
+      "statusId": "0",
+      "isImportant": false,
+      "name": "Test Project",
+      "siteId": "1000682",
+      "modifiedTimestamp": "2018-02-07T00:14:23+00:00",
+      "budgetApprovalRequired": false,
+      "createdById": "1001490"
+    }
+  },
+  {
+    "_index": "project-task-002",
+    "_type": "_doc",
+    "_id": "AWF2kqRi7WqVH9upC2-k",
+    "_score": 6.1933002,
+    "_source": {
+      "sourceId": "AV-iqW0O7WqVH9upkx-N",
+      "subsystemId": "AV-iqW0O7WqVH9upkx9e",
+      "legacy": {
+        "assignedToList": [
+          "Mark Greenwood"
+        ],
+        "published": true
+      },
+      "createdTimestamp": "2018-02-08T17:59:37+00:00",
+      "hasIncentive": false,
+      "deletedTimestamp": "2018-02-08T20:18:55+00:00",
+      "statusId": "0",
+      "isImportant": false,
+      "name": "Test Project Please Don't Delete",
+      "siteId": "1000682",
+      "modifiedTimestamp": "2018-02-08T17:59:37+00:00",
+      "budgetApprovalRequired": false,
+      "createdById": "1001490"
+    }
+  },
+  {
+    "_index": "project-task-002",
+    "_type": "_doc",
+    "_id": "32368",
+    "_score": 6.1933002,
+    "_source": {
+      "targetTimestamp": "2018-01-31T00:00:00.000Z",
+      "legacy": {
+        "assignedToList": [
+          "Mark Greenwood",
+          "Ben Cassidy"
+        ],
+        "published": false
+      },
+      "hasIncentive": false,
+      "hoursBudget": 0,
+      "deletedTimestamp": "2018-02-06T23:56:28+00:00",
+      "priorityId": "AV-iqW0O7WqVH9upkx9W",
+      "number": 1,
+      "isImportant": false,
+      "completedTimestamp": "2018-01-13T00:00:00.000Z",
+      "createdById": "1001490",
+      "subsystemId": "AV-iqW0O7WqVH9upkx9c",
+      "createdTimestamp": "2017-09-25T20:59:00.000Z",
+      "energyImpactId": "AV-iqW0O7WqVH9upkx9Z",
+      "expenditureBudget": "0",
+      "requiredActions": "Check it out",
+      "statusId": "1",
+      "background": "Test status filtering",
+      "assignedToIdList": [],
+      "name": "MarksTestForStatusFiltering",
+      "siteId": "1000676",
+      "modifiedTimestamp": "2018-01-26T20:04:22+00:00",
+      "budgetApprovalRequired": false
+    }
+  },
+  {
+    "_index": "project-task-002",
+    "_type": "_doc",
+    "_id": "AWFtj90TUCISVDM1d4D4",
+    "_score": 6.1933002,
+    "_source": {
+      "sourceId": "AV-iqW0O7WqVH9upkx-L",
+      "subsystemId": "AV-iqW0O7WqVH9upkx9e",
+      "legacy": {
+        "assignedToList": [
+          ""
+        ],
+        "published": true
+      },
+      "createdTimestamp": "2018-02-07T00:00:00+00:00",
+      "hasIncentive": false,
+      "deletedTimestamp": "2018-02-07T00:01:42+00:00",
+      "statusId": "1",
+      "isImportant": false,
+      "name": "This Should Cause an Error",
+      "siteId": "1000682",
+      "modifiedTimestamp": "2018-02-07T00:00:14+00:00",
+      "budgetApprovalRequired": false,
+      "createdById": "1001490"
+    }
+  },
+  {
+    "_index": "project-task-002",
+    "_type": "_doc",
+    "_id": "32369",
+    "_score": 6.1933002,
+    "_source": {
+      "targetTimestamp": "2017-09-19T00:00:00.000Z",
+      "legacy": {
+        "assignedToList": [
+          ""
+        ],
+        "published": true
+      },
+      "hasIncentive": false,
+      "hoursBudget": 0,
+      "deletedTimestamp": "2018-02-07T00:07:28+00:00",
+      "priorityId": "AV-iqW0O7WqVH9upkx9W",
+      "number": 2,
+      "isImportant": false,
+      "completedTimestamp": "2017-09-19T00:00:00.000Z",
+      "createdById": "1001490",
+      "subsystemId": "AV-iqW0O7WqVH9upkx9h",
+      "createdTimestamp": "2017-09-25T21:01:09.000Z",
+      "energyImpactId": "AV-iqW0O7WqVH9upkx9Z",
+      "expenditureBudget": "0",
+      "requiredActions": "Will it filter out?",
+      "statusId": "2",
+      "background": "This one is done.",
+      "assignedToIdList": [],
+      "name": "MarksCompletedTaskForStatusFiltering",
+      "siteId": "1000676",
+      "modifiedTimestamp": "2018-01-12T17:26:41+00:00",
+      "budgetApprovalRequired": false
+    }
+  },
+  {
+    "_index": "project-task-002",
+    "_type": "_doc",
+    "_id": "32370",
+    "_score": 6.1933002,
+    "_source": {
+      "targetTimestamp": "2017-10-30T00:00:00.000Z",
+      "legacy": {
+        "assignedToList": [
+          "Mark Greenwood"
+        ],
+        "published": true
+      },
+      "hasIncentive": false,
+      "hoursBudget": 0,
+      "deletedTimestamp": "2018-02-07T00:07:22+00:00",
+      "priorityId": "AV-iqW0O7WqVH9upkx9W",
+      "number": 3,
+      "isImportant": false,
+      "completedTimestamp": null,
+      "createdById": "1001490",
+      "subsystemId": "AV-iqW0O7WqVH9upkx9n",
+      "createdTimestamp": "2017-09-25T21:02:11.000Z",
+      "energyImpactId": "AV-iqW0O7WqVH9upkx9Z",
+      "expenditureBudget": "0",
+      "requiredActions": "Check it.",
+      "statusId": "2",
+      "background": "This one is NOT overdue.",
+      "assignedToIdList": [],
+      "name": "WhoopsIForgotATitleForThisOne",
+      "siteId": "1000676",
+      "modifiedTimestamp": "2018-01-12T20:49:49+00:00",
+      "budgetApprovalRequired": false
+    }
+  },
+  {
+    "_index": "project-task-002",
+    "_type": "_doc",
+    "_id": "AWImN42PY9Zlm6KfYzGw",
+    "_score": 6.1933002,
+    "_source": {
+      "targetTimestamp": "2018-03-16T00:00:00.000Z",
+      "sourceId": "AV-iqW0O7WqVH9upkx-M",
+      "subsystemId": "AV-iqW0O7WqVH9upkx9c",
+      "legacy": {
+        "assignedToList": [
+          ""
+        ],
+        "published": true
+      },
+      "createdTimestamp": "2018-03-14T20:33:17+00:00",
+      "hasIncentive": false,
+      "deletedTimestamp": "2018-03-14T22:36:56+00:00",
+      "statusId": "0",
+      "isImportant": false,
+      "name": "Test Project to Move From One Site to Another",
+      "completedTimestamp": null,
+      "siteId": "1000676",
+      "modifiedTimestamp": "2018-03-14T22:36:26+00:00",
+      "budgetApprovalRequired": false,
+      "createdById": "1001490"
+    }
+  },
+  {
+    "_index": "project-task-002",
+    "_type": "_doc",
+    "_id": "AWF3XzOMUCISVDM1epeK",
+    "_score": 6.1933002,
+    "_source": {
+      "targetTimestamp": "2018-02-15T00:00:00.000Z",
+      "sourceId": "AV-iqW0O7WqVH9upkx-M",
+      "subsystemId": "AV-iqW0O7WqVH9upkx9c",
+      "legacy": {
+        "assignedToList": [
+          ""
+        ],
+        "published": true
+      },
+      "createdTimestamp": "2018-02-08T21:43:03+00:00",
+      "energyImpactId": "AV-iqW0O7WqVH9upkx9Z",
+      "hasIncentive": true,
+      "hoursBudget": 2,
+      "deletedTimestamp": "2018-03-19T17:33:43+00:00",
+      "requiredActions": "First actions",
+      "statusId": "1",
+      "effortId": "AV-iqW0O7WqVH9upkx-P",
+      "background": "First project",
+      "isImportant": false,
+      "name": "Project One",
+      "completedTimestamp": "2018-02-09T00:00:00.000Z",
+      "siteId": "1000682",
+      "modifiedTimestamp": "2018-02-09T18:07:47+00:00",
+      "budgetApprovalRequired": false,
+      "createdById": "1001490"
+    }
+  },
+  {
+    "_index": "project-task-002",
+    "_type": "_doc",
+    "_id": "AWF3X-cc7WqVH9upC6Rc",
+    "_score": 6.1933002,
+    "_source": {
+      "targetTimestamp": "2018-02-16T00:00:00.000Z",
+      "sourceId": "AV-iqW0O7WqVH9upkx-N",
+      "subsystemId": "AV-iqW0O7WqVH9upkx9d",
+      "legacy": {
+        "assignedToList": [
+          "Mark Greenwood"
+        ],
+        "published": true
+      },
+      "createdTimestamp": "2018-02-08T21:43:49+00:00",
+      "hasIncentive": false,
+      "deletedTimestamp": "2018-03-19T17:33:36+00:00",
+      "requiredActions": "gsadgktt",
+      "statusId": "1",
+      "background": "asdl;fkhja",
+      "isImportant": false,
+      "name": "Project Two",
+      "completedTimestamp": "2018-02-09T00:00:00.000Z",
+      "siteId": "1000676",
+      "modifiedTimestamp": "2018-02-09T18:08:41+00:00",
+      "budgetApprovalRequired": false,
+      "createdById": "1001490"
+    }
+  },
+  {
+    "_index": "project-task-002",
+    "_type": "_doc",
+    "_id": "AWGLx7l_Y9Zlm6KfOUj2",
+    "_score": 6.1933002,
+    "_source": {
+      "targetTimestamp": "2018-02-23T00:00:00.000Z",
+      "sourceId": "AWB7OeuHpQJJiXxO_mXK",
+      "subsystemId": "AV-iqW0O7WqVH9upkx9f",
+      "legacy": {
+        "assignedToList": [
+          ""
+        ],
+        "published": true
+      },
+      "createdTimestamp": "2018-02-12T20:49:37+00:00",
+      "hasIncentive": false,
+      "deletedTimestamp": "2018-03-19T17:33:51+00:00",
+      "statusId": "2",
+      "isImportant": false,
+      "name": "Project Two Modified",
+      "siteId": "1000676",
+      "modifiedTimestamp": "2018-02-28T21:29:56+00:00",
+      "budgetApprovalRequired": false,
+      "createdById": "1001490"
+    }
+  },
+  {
+    "_index": "project-task-002",
+    "_type": "_doc",
+    "_id": "AWGLxxloCWppMxMHxHP6",
+    "_score": 6.1933002,
+    "_source": {
+      "targetTimestamp": "2018-02-12T00:00:00.000Z",
+      "sourceId": "AV-iqW0O7WqVH9upkx-M",
+      "subsystemId": "AV-iqW0O7WqVH9upkx9c",
+      "legacy": {
+        "assignedToList": [
+          ""
+        ],
+        "published": true
+      },
+      "createdTimestamp": "2018-02-12T20:48:56+00:00",
+      "hasIncentive": false,
+      "deletedTimestamp": "2018-03-19T17:33:47+00:00",
+      "statusId": "0",
+      "isImportant": false,
+      "name": "Project Three",
+      "siteId": "1000682",
+      "modifiedTimestamp": "2018-02-12T20:48:56+00:00",
+      "budgetApprovalRequired": false,
+      "createdById": "1001490"
+    }
+  },
+  {
+    "_index": "project-task-002",
+    "_type": "_doc",
+    "_id": "AWGLyE1c7WqVH9upESFg",
+    "_score": 6.1933002,
+    "_source": {
+      "targetTimestamp": "2018-02-20T00:00:00.000Z",
+      "sourceId": "AV-iqW0O7WqVH9upkx-L",
+      "subsystemId": "AV-iqW0O7WqVH9upkx9e",
+      "legacy": {
+        "assignedToList": [
+          ""
+        ],
+        "published": true
+      },
+      "createdTimestamp": "2018-02-12T20:50:15+00:00",
+      "hasIncentive": false,
+      "deletedTimestamp": "2018-03-19T17:33:56+00:00",
+      "statusId": "0",
+      "isImportant": false,
+      "name": "Project Five",
+      "siteId": "1000682",
+      "modifiedTimestamp": "2018-02-12T20:50:15+00:00",
+      "budgetApprovalRequired": false,
+      "createdById": "1001490"
+    }
+  },
+  {
+    "_index": "project-task-002",
+    "_type": "_doc",
+    "_id": "AWGMD5sbY9Zlm6KfOVuv",
+    "_score": 6.1933002,
+    "_source": {
+      "targetTimestamp": "2018-02-16T00:00:00.000Z",
+      "sourceId": "AV-iqW0O7WqVH9upkx-O",
+      "subsystemId": "AV-iqW0O7WqVH9upkx9d",
+      "legacy": {
+        "assignedToList": [
+          ""
+        ],
+        "published": true
+      },
+      "createdTimestamp": "2018-02-12T22:08:08+00:00",
+      "hasIncentive": false,
+      "deletedTimestamp": "2018-03-19T17:34:00+00:00",
+      "statusId": "0",
+      "isImportant": false,
+      "name": "Project Six",
+      "siteId": "1000676",
+      "modifiedTimestamp": "2018-02-12T22:08:08+00:00",
+      "budgetApprovalRequired": false,
+      "createdById": "1001490"
+    }
+  },
+  {
+    "_index": "project-task-002",
+    "_type": "_doc",
+    "_id": "AWImqZYqCWppMxMH7r6s",
+    "_score": 6.1933002,
+    "_source": {
+      "sourceId": "AV-iqW0O7WqVH9upkx-M",
+      "targetTimestamp": "2018-03-22T00:00:00.000Z",
+      "subsystemId": "AV-iqW0O7WqVH9upkx9d",
+      "legacy": {
+        "assignedToList": [
+          ""
+        ],
+        "published": true
+      },
+      "createdTimestamp": "2018-03-14T22:37:50+00:00",
+      "hasIncentive": false,
+      "deletedTimestamp": "2018-03-19T17:35:11+00:00",
+      "statusId": "0",
+      "isImportant": false,
+      "name": "Move me from $marks-test-site to $MarkCanWriteToThisSite",
+      "completedTimestamp": null,
+      "siteId": "1000676",
+      "modifiedTimestamp": "2018-03-16T19:36:13+00:00",
+      "budgetApprovalRequired": false,
+      "createdById": "1001490"
+    }
+  },
+  {
+    "_index": "project-task-002",
+    "_type": "_doc",
+    "_id": "AWIlpJP-pQJJiXxOPmad",
+    "_score": 6.1933002,
+    "_source": {
+      "targetTimestamp": "2018-03-15T00:00:00.000Z",
+      "sourceId": "AV-iqW0O7WqVH9upkx-M",
+      "subsystemId": "AV-iqW0O7WqVH9upkx9c",
+      "legacy": {
+        "assignedToList": [
+          ""
+        ],
+        "published": true
+      },
+      "createdTimestamp": "2018-03-14T17:52:45+00:00",
+      "hasIncentive": false,
+      "deletedTimestamp": "2018-03-19T17:34:28+00:00",
+      "statusId": "0",
+      "isImportant": false,
+      "name": "Move from $marks-test-site to $MarkCanWriteToThisSite",
+      "completedTimestamp": null,
+      "siteId": "1000682",
+      "modifiedTimestamp": "2018-03-14T17:53:11+00:00",
+      "budgetApprovalRequired": false,
+      "createdById": "1001490"
+    }
+  },
+  {
+    "_index": "project-task-002",
+    "_type": "_doc",
+    "_id": "AWImgh3PUCISVDM1qbmh",
+    "_score": 6.1933002,
+    "_source": {
+      "targetTimestamp": "2018-03-22T00:00:00.000Z",
+      "sourceId": "AV-iqW0O7WqVH9upkx-M",
+      "subsystemId": "AV-iqW0O7WqVH9upkx9d",
+      "legacy": {
+        "assignedToList": [
+          ""
+        ],
+        "published": true
+      },
+      "createdTimestamp": "2018-03-14T21:54:44+00:00",
+      "hasIncentive": false,
+      "deletedTimestamp": "2018-03-19T17:34:32+00:00",
+      "statusId": "0",
+      "isImportant": false,
+      "name": "Test Project Zed",
+      "completedTimestamp": null,
+      "siteId": "1000676",
+      "modifiedTimestamp": "2018-03-14T22:06:53+00:00",
+      "budgetApprovalRequired": false,
+      "createdById": "1001490"
+    }
+  },
+  {
+    "_index": "project-task-002",
+    "_type": "_doc",
+    "_id": "AWGMEeXWUCISVDM1gAqt",
+    "_score": 6.1933002,
+    "_source": {
+      "targetTimestamp": "2018-02-23T00:00:00.000Z",
+      "sourceId": "AWB7OeuHpQJJiXxO_mXK",
+      "subsystemId": "AV-iqW0O7WqVH9upkx9g",
+      "legacy": {
+        "assignedToList": [
+          ""
+        ],
+        "published": true
+      },
+      "createdTimestamp": "2018-02-12T22:10:38+00:00",
+      "hasIncentive": false,
+      "deletedTimestamp": "2018-03-19T17:34:13+00:00",
+      "statusId": "2",
+      "isImportant": false,
+      "name": "Project Nine",
+      "siteId": "1000682",
+      "modifiedTimestamp": "2018-02-12T22:10:38+00:00",
+      "budgetApprovalRequired": false,
+      "createdById": "1001490"
+    }
+  },
+  {
+    "_index": "project-task-002",
+    "_type": "_doc",
+    "_id": "AWGMEeXPCWppMxMHxIZ6",
+    "_score": 6.1933002,
+    "_source": {
+      "targetTimestamp": "2018-02-23T00:00:00.000Z",
+      "sourceId": "AWB7OeuHpQJJiXxO_mXK",
+      "subsystemId": "AV-iqW0O7WqVH9upkx9g",
+      "legacy": {
+        "assignedToList": [
+          ""
+        ],
+        "published": true
+      },
+      "createdTimestamp": "2018-02-12T22:10:38+00:00",
+      "hasIncentive": false,
+      "deletedTimestamp": "2018-03-19T17:34:17+00:00",
+      "statusId": "2",
+      "isImportant": false,
+      "name": "Project Nine",
+      "siteId": "1000676",
+      "modifiedTimestamp": "2018-02-12T22:10:38+00:00",
+      "budgetApprovalRequired": false,
+      "createdById": "1001490"
+    }
+  },
+  {
+    "_index": "project-task-002",
+    "_type": "_doc",
+    "_id": "AWGMEEJ5pQJJiXxONc57",
+    "_score": 6.1933002,
+    "_source": {
+      "targetTimestamp": "2018-02-13T00:00:00.000Z",
+      "sourceId": "AWB7OeuHpQJJiXxO_mXK",
+      "subsystemId": "AV-iqW0O7WqVH9upkx9h",
+      "legacy": {
+        "assignedToList": [
+          ""
+        ],
+        "published": true
+      },
+      "createdTimestamp": "2018-02-12T22:08:51+00:00",
+      "hasIncentive": false,
+      "deletedTimestamp": "2018-03-19T17:34:05+00:00",
+      "statusId": "2",
+      "isImportant": false,
+      "name": "Project Seven",
+      "siteId": "1000682",
+      "modifiedTimestamp": "2018-02-12T22:08:51+00:00",
+      "budgetApprovalRequired": false,
+      "createdById": "1001490"
+    }
+  },
+  {
+    "_index": "project-task-002",
+    "_type": "_doc",
+    "_id": "AWGMEQnxpQJJiXxONc6B",
+    "_score": 6.1933002,
+    "_source": {
+      "targetTimestamp": "2018-02-12T00:00:00.000Z",
+      "sourceId": "AV-iqW0O7WqVH9upkx-N",
+      "subsystemId": "AV-iqW0O7WqVH9upkx9i",
+      "legacy": {
+        "assignedToList": [
+          ""
+        ],
+        "published": true
+      },
+      "createdTimestamp": "2018-02-12T22:09:42+00:00",
+      "hasIncentive": false,
+      "deletedTimestamp": "2018-03-19T17:34:10+00:00",
+      "statusId": "1",
+      "isImportant": false,
+      "name": "Project Eight",
+      "siteId": "1000676",
+      "modifiedTimestamp": "2018-02-12T22:09:42+00:00",
+      "budgetApprovalRequired": false,
+      "createdById": "1001490"
+    }
+  },
+  {
+    "_index": "project-task-002",
+    "_type": "_doc",
+    "_id": "AWGMEyjPCWppMxMHxIas",
+    "_score": 6.1933002,
+    "_source": {
+      "targetTimestamp": "2018-02-21T00:00:00.000Z",
+      "sourceId": "AV-iqW0O7WqVH9upkx-M",
+      "subsystemId": "AV-iqW0O7WqVH9upkx9e",
+      "legacy": {
+        "assignedToList": [
+          ""
+        ],
+        "published": true
+      },
+      "createdTimestamp": "2018-02-12T22:12:01+00:00",
+      "hasIncentive": true,
+      "deletedTimestamp": "2018-03-19T17:34:20+00:00",
+      "statusId": "0",
+      "isImportant": false,
+      "name": "Project Ten",
+      "siteId": "1000676",
+      "modifiedTimestamp": "2018-02-12T22:12:01+00:00",
+      "budgetApprovalRequired": false,
+      "createdById": "1001490"
+    }
+  },
+  {
+    "_index": "project-task-002",
+    "_type": "_doc",
+    "_id": "AWHofXBZ7WqVH9upKt0C",
+    "_score": 6.1933002,
+    "_source": {
+      "sourceId": "AWB7OeuHpQJJiXxO_mXK",
+      "subsystemId": "AV-iqW0O7WqVH9upkx9c",
+      "legacy": {
+        "assignedToList": [
+          ""
+        ],
+        "published": true
+      },
+      "createdTimestamp": "2018-03-02T20:53:10+00:00",
+      "hasIncentive": false,
+      "deletedTimestamp": "2018-03-19T17:34:24+00:00",
+      "statusId": "0",
+      "isImportant": false,
+      "name": "Test Project One",
+      "completedTimestamp": null,
+      "siteId": "1000676",
+      "modifiedTimestamp": "2018-03-02T20:53:10+00:00",
+      "budgetApprovalRequired": false,
+      "createdById": "1001490"
+    }
+  },
+  {
+    "_index": "project-task-002",
+    "_type": "_doc",
+    "_id": "AWJkRfUyCWppMxMH_OvX",
+    "_score": 6.1933002,
+    "_source": {
+      "targetTimestamp": "2018-03-28T00:00:00.000Z",
+      "sourceId": "AV-iqW0O7WqVH9upkx-M",
+      "subsystemId": "AV-iqW0O7WqVH9upkx9c",
+      "legacy": {
+        "assignedToList": [
+          ""
+        ],
+        "published": true
+      },
+      "createdTimestamp": "2018-03-26T21:45:29+00:00",
+      "energyImpactId": "AV-iqW0O7WqVH9upkx9Z",
+      "hasIncentive": false,
+      "number": 2,
+      "statusId": "0",
+      "effortId": "AV-iqW0O7WqVH9upkx-P",
+      "isImportant": false,
+      "name": "First project",
+      "completedTimestamp": null,
+      "siteId": "1000676",
+      "modifiedTimestamp": "2018-03-26T22:17:08+00:00",
+      "budgetApprovalRequired": false,
+      "createdById": "1001490"
+    }
+  },
+  {
+    "_index": "project-task-002",
+    "_type": "_doc",
+    "_id": "AWJkRrlV7WqVH9upSh9S",
+    "_score": 6.1933002,
+    "_source": {
+      "targetTimestamp": "2018-03-29T00:00:00.000Z",
+      "sourceId": "AV-iqW0O7WqVH9upkx-M",
+      "subsystemId": "AV-iqW0O7WqVH9upkx9d",
+      "legacy": {
+        "assignedToList": [
+          ""
+        ],
+        "published": true
+      },
+      "createdTimestamp": "2018-03-26T21:46:19+00:00",
+      "energyImpactId": "AV-iqW0O7WqVH9upkx9a",
+      "hasIncentive": false,
+      "number": 3,
+      "statusId": "0",
+      "effortId": "AV-iqW0O7WqVH9upkx-Q",
+      "isImportant": false,
+      "name": "Second project",
+      "completedTimestamp": null,
+      "siteId": "1000676",
+      "modifiedTimestamp": "2018-03-26T22:18:33+00:00",
+      "budgetApprovalRequired": false,
+      "createdById": "1001490"
+    }
+  },
+  {
+    "_index": "project-task-002",
+    "_type": "_doc",
+    "_id": "AWJkL7dDY9Zlm6KfcZ5a",
+    "_score": 6.1933002,
+    "_source": {
+      "targetTimestamp": "2018-03-30T00:00:00.000Z",
+      "sourceId": "AV-iqW0O7WqVH9upkx-N",
+      "subsystemId": "AV-iqW0O7WqVH9upkx9i",
+      "legacy": {
+        "assignedToList": [
+          "Mark Greenwood"
+        ],
+        "published": true
+      },
+      "createdTimestamp": "2018-03-26T21:21:11+00:00",
+      "energyImpactId": "AV-iqW0O7WqVH9upkx9a",
+      "hasIncentive": false,
+      "number": 1,
+      "requiredActions": "Find out.",
+      "statusId": "1",
+      "effortId": "AV-iqW0O7WqVH9upkx-P",
+      "background": "Is it important?",
+      "isImportant": true,
+      "name": "My Test Project",
+      "completedTimestamp": "2018-03-27T00:00:00.000Z",
+      "siteId": "1000676",
+      "modifiedTimestamp": "2018-03-27T19:50:03+00:00",
+      "budgetApprovalRequired": false,
+      "createdById": "1001490"
+    }
+  },
+  {
+    "_index": "project-task-002",
+    "_type": "_doc",
+    "_id": "AWJkXpyO7WqVH9upSid0",
+    "_score": 6.1933002,
+    "_source": {
+      "sourceId": "AV-iqW0O7WqVH9upkx-M",
+      "targetTimestamp": "2018-03-31T00:00:00.000Z",
+      "subsystemId": "AV-iqW0O7WqVH9upkx9n",
+      "legacy": {
+        "assignedToList": [
+          ""
+        ],
+        "published": true
+      },
+      "createdTimestamp": "2018-03-26T22:12:24+00:00",
+      "energyImpactId": "AV-iqW0O7WqVH9upkx9a",
+      "hasIncentive": false,
+      "number": 17,
+      "statusId": "2",
+      "effortId": "AV-iqW0O7WqVH9upkx-Q",
+      "isImportant": true,
+      "name": "Project Umpty-Seventeen",
+      "completedTimestamp": null,
+      "siteId": "1000676",
+      "modifiedTimestamp": "2018-04-06T17:46:48+00:00",
+      "budgetApprovalRequired": false,
+      "createdById": "1001490"
+    }
+  },
+  {
+    "_index": "project-task-002",
+    "_type": "_doc",
+    "_id": "AWKcFKO57WqVH9upV2rP",
+    "_score": 6.1933002,
+    "_source": {
+      "targetTimestamp": "2018-04-20T00:00:00.000Z",
+      "sourceId": "AV-iqW0O7WqVH9upkx-O",
+      "subsystemId": "AV-iqW0O7WqVH9upkx9g",
+      "legacy": {
+        "assignedToList": [
+          "Mark Greenwood"
+        ],
+        "published": true
+      },
+      "createdTimestamp": "2018-04-06T17:50:21+00:00",
+      "energyImpactId": "AV-iqW0O7WqVH9upkx9a",
+      "hasIncentive": false,
+      "statusId": "0",
+      "effortId": "AV-iqW0O7WqVH9upkx-P",
+      "isImportant": false,
+      "name": "Test Project Seventy-Seven",
+      "completedTimestamp": null,
+      "siteId": "1000676",
+      "modifiedTimestamp": "2018-04-06T17:50:21+00:00",
+      "budgetApprovalRequired": false,
+      "createdById": "1001490"
+    }
+  },
+  {
+    "_index": "project-task-002",
+    "_type": "_doc",
+    "_id": "AWKcFGLDCWppMxMHCe7z",
+    "_score": 6.1933002,
+    "_source": {
+      "targetTimestamp": "2018-04-20T00:00:00.000Z",
+      "sourceId": "AV-iqW0O7WqVH9upkx-O",
+      "subsystemId": "AV-iqW0O7WqVH9upkx9g",
+      "legacy": {
+        "assignedToList": [
+          "Mark Greenwood"
+        ],
+        "published": true
+      },
+      "createdTimestamp": "2018-04-06T17:50:04+00:00",
+      "energyImpactId": "AV-iqW0O7WqVH9upkx9a",
+      "hasIncentive": true,
+      "statusId": "0",
+      "effortId": "AV-iqW0O7WqVH9upkx-P",
+      "isImportant": false,
+      "name": "Test Project Seventy-Seven",
+      "completedTimestamp": null,
+      "siteId": "1000676",
+      "modifiedTimestamp": "2018-04-06T17:50:04+00:00",
+      "budgetApprovalRequired": false,
+      "createdById": "1001490"
+    }
+  },
+  {
+    "_index": "project-task-002",
+    "_type": "_doc",
+    "_id": "AWKcGWgQUCISVDM1xLoq",
+    "_score": 6.1933002,
+    "_source": {
+      "targetTimestamp": "2018-04-19T00:00:00.000Z",
+      "sourceId": "AV-iqW0O7WqVH9upkx-O",
+      "subsystemId": "AV-iqW0O7WqVH9upkx9c",
+      "legacy": {
+        "assignedToList": [
+          "Mark Greenwood"
+        ],
+        "published": true
+      },
+      "createdTimestamp": "2018-04-06T17:55:33+00:00",
+      "energyImpactId": "AV-iqW0O7WqVH9upkx9a",
+      "hasIncentive": true,
+      "statusId": "2",
+      "effortId": "AV-iqW0O7WqVH9upkx-Q",
+      "isImportant": false,
+      "name": "Another Project Forty-Two",
+      "completedTimestamp": null,
+      "siteId": "1000676",
+      "modifiedTimestamp": "2018-04-06T17:55:33+00:00",
+      "budgetApprovalRequired": false,
+      "createdById": "1001490"
+    }
+  },
+  {
+    "_index": "project-task-002",
+    "_type": "_doc",
+    "_id": "AWKcFfpE7WqVH9upV2tR",
+    "_score": 6.1933002,
+    "_source": {
+      "targetTimestamp": "2018-04-20T00:00:00.000Z",
+      "sourceId": "AV-iqW0O7WqVH9upkx-N",
+      "subsystemId": "AV-iqW0O7WqVH9upkx9f",
+      "legacy": {
+        "assignedToList": [
+          "Mark"
+        ],
+        "published": true
+      },
+      "createdTimestamp": "2018-04-06T17:51:48+00:00",
+      "energyImpactId": "AV-iqW0O7WqVH9upkx9Z",
+      "hasIncentive": true,
+      "statusId": "0",
+      "effortId": "AV-iqW0O7WqVH9upkx-P",
+      "isImportant": true,
+      "name": "Test Project Forty-Two",
+      "completedTimestamp": null,
+      "siteId": "1000676",
+      "modifiedTimestamp": "2018-04-06T17:53:49+00:00",
+      "budgetApprovalRequired": false,
+      "createdById": "1001490"
+    }
+  },
+  {
+    "_index": "project-task-002",
+    "_type": "_doc",
+    "_id": "6Qld-mMBLAOFaYAm6Lih",
+    "_score": 6.1933002,
+    "_source": {
+      "sourceId": "string",
+      "legacy": {
+        "assignedToList": [
+          "string"
+        ],
+        "published": false
+      },
+      "hoursBudget": 0,
+      "hasIncentive": false,
+      "priorityId": "string",
+      "number": 0,
+      "modifiedById": "1001490",
+      "effortId": "string",
+      "isImportant": false,
+      "savings": "0",
+      "createdById": "1001490",
+      "subsystemId": "string",
+      "createdTimestamp": "2018-06-13T18:14:39+00:00",
+      "energyImpactId": "string",
+      "expenditureBudget": "0",
+      "requiredActions": "string",
+      "statusId": "string",
+      "background": "string",
+      "assignedToIdList": [
+        "string"
+      ],
+      "name": "Test Project for Mark G",
+      "siteId": "1000676",
+      "persistence": {
+        "persistenceStrategyId": "string",
+        "isStrategyImplemented": false,
+        "backslidingRiskId": "string",
+        "reviewTimestamp": "2018-06-13T00:00:00.000Z"
+      },
+      "modifiedTimestamp": "2018-06-13T18:14:45.000Z",
+      "budgetApprovalRequired": false
+    }
+  },
+  {
+    "_index": "project-task-002",
+    "_type": "_doc",
+    "_id": "6gle-mMBLAOFaYAmwrgK",
+    "_score": 6.1933002,
+    "_source": {
+      "legacy": {
+        "assignedToList": [
+          "string"
+        ],
+        "published": false
+      },
+      "hoursBudget": 0,
+      "hasIncentive": false,
+      "priorityId": "string",
+      "number": 0,
+      "modifiedById": "1001490",
+      "effortId": "string",
+      "isImportant": false,
+      "savings": "0",
+      "createdById": "1001490",
+      "subsystemId": "string",
+      "createdTimestamp": "2018-06-13T18:14:39+00:00",
+      "energyImpactId": "string",
+      "expenditureBudget": "0",
+      "requiredActions": "string",
+      "statusId": "string",
+      "background": "string",
+      "assignedToIdList": [
+        "string"
+      ],
+      "name": "Test Project 2 for Mark G",
+      "siteId": "1000676",
+      "persistence": {
+        "persistenceStrategyId": "string",
+        "isStrategyImplemented": false,
+        "backslidingRiskId": "string",
+        "reviewTimestamp": "2018-06-13T00:00:00.000Z"
+      },
+      "modifiedTimestamp": "2018-06-13T18:14:45.000Z",
+      "budgetApprovalRequired": false
+    }
+  },
+  {
+    "_index": "project-task-002",
+    "_type": "_doc",
+    "_id": "XxpxqWQBgJcwe7X3QS1-",
+    "_score": 6.1933002,
+    "_source": {
+      "name": "Test Task 42.5",
+      "createdById": "1001490",
+      "siteId": "1000676",
+      "savings": "100",
+      "expenditureBudget": "20000"
+    }
+  },
+  {
+    "_index": "project-task-002",
+    "_type": "_doc",
+    "_id": "I-w6qWQB4Z2PZDSPyPHF",
+    "_score": 6.1933002,
+    "_source": {
+      "name": "Test Task 42",
+      "createdById": "1001490",
+      "siteId": "1000676",
+      "savings": "100",
+      "expenditureBudget": 20000,
+      "modifiedTimestamp": "2018-07-17T21:16:09+00:00"
+    }
+  },
+  {
+    "_index": "project-task-002",
+    "_type": "_doc",
+    "_id": "QrArqmQBorGjcxK0PV2R",
+    "_score": 6.1933002,
+    "_source": {
+      "name": "Test Project 4242",
+      "siteId": "1000676",
+      "createdById": "1001490",
+      "savings": null,
+      "expenditureBudget": "1000",
+      "createdTimestamp": "2018-07-17T21:16:09+00:00",
+      "modifiedTimestamp": "2018-07-18T15:43:59+00:00",
+      "budgetApprovalRequired": false,
+      "hasIncentive": false,
+      "isImportant": false
+    }
+  }
+]

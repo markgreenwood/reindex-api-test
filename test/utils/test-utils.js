@@ -1,5 +1,6 @@
 const R = require('ramda');
 const axios = require('axios');
+const fs = require('fs');
 
 let users = require('../../users.json');
 
@@ -78,4 +79,4 @@ module.exports = {
   createUsers,
   populateNewIndex,
   compareIndicesContents
-}
+};
